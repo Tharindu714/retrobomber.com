@@ -103,7 +103,7 @@ assets/       ← (optional) place player/enemy GIFs, sounds, icons here
 
 1. Create a new GitHub repository and push your project files.
 2. In the repo settings, go to **Pages** → source: `main` branch → root (`/`).
-3. Save. GitHub will publish at ``.
+3. Save. GitHub will publish at `https://github.com/Tharindu714/retrobomber.com.git`.
 
 ---
 
