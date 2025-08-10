@@ -4,12 +4,6 @@
 
 ---
 
-## 🎮 Live demo
-
-Drop the project files in a static host or open `index.html` in your browser. For best results publish the repo to **GitHub Pages** (instructions below).
-
----
-
 ## ✨ Highlights
 
 * Retro arcade feel: pixel-smooth animations, simple controls, neon HUD.
@@ -54,7 +48,8 @@ assets/       ← (optional) place player/enemy GIFs, sounds, icons here
 
 ## 🧑‍🚀 Player — "Bomber Kid" (Character Description)
 
-**File (suggested):** `assets/player.gif`
+![player](https://github.com/user-attachments/assets/cbdc9ac5-aead-4d6c-9f8f-a30cea257566)
+
 **Personality & Motivation:** Bomber Kid is a plucky, determined sprite who tosses bombs to clear a maze of obstacles and stop the creeping enemy waves. He’s quick on his feet, fearless, and always chasing a higher score.
 **Why bombs?** The bombs are tools to clear blocked paths and defeat enemies — but they’re also risky: timing and placement matter.
 **Behavior (in-game):**
@@ -69,7 +64,8 @@ assets/       ← (optional) place player/enemy GIFs, sounds, icons here
 
 ## 👾 Enemies — "Bit Fiends" (Description)
 
-**File (suggested):** `assets/enemy.gif`
+![enemy](https://github.com/user-attachments/assets/9108a4f3-f810-4460-ac92-dea44abfb946)
+
 **Motivation:** Enemies roam the map hunting the player and defending their territory. They try to collide with the player to steal lives.
 **Behavior (in-game):**
 
@@ -107,7 +103,7 @@ assets/       ← (optional) place player/enemy GIFs, sounds, icons here
 
 1. Create a new GitHub repository and push your project files.
 2. In the repo settings, go to **Pages** → source: `main` branch → root (`/`).
-3. Save. GitHub will publish at `https://<your-username>.github.io/<repo-name>/`.
+3. Save. GitHub will publish at ``.
 
 ---
 
@@ -149,5 +145,5 @@ For faster response: message **Tharindu** (project author) or add contact in `pa
 
 ---
 
-Made with ❤️ by **Tharindu** — Retro games for quick smiles and high scores.
+Made with ❤️ by **Tharindu714** — Retro games for quick smiles and high scores.
 
