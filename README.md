@@ -89,6 +89,14 @@ assets/       ← (optional) place player/enemy GIFs, sounds, icons here
 
 ---
 
+## 📸 Screenshots / GIF
+
+*(Paste your GIF or screenshots below — they look great on the repo front page.)*
+
+<img width="1348" height="609" alt="Bomberman" src="https://github.com/user-attachments/assets/aca3d293-0f97-477c-b74c-d69dd71bed13" />
+
+---
+
 ## ⚙️ How to run locally
 
 1. Clone or copy the repo to your local machine.
