@@ -1,0 +1,184 @@
+:root {
+  --bg: #0f1113;
+  --accent: #00d4ff;
+  --muted: #9aa3ad;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: radial-gradient(
+      1200px 600px at 10% 10%,
+      rgba(0, 212, 255, 0.04),
+      transparent
+    ),
+    linear-gradient(180deg, #060708 0%, #0b0c0f 100%);
+  color: #e6eef6;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin-top: 220px;
+}
+.container {
+  width: 100%;
+  max-width: 880px;
+  text-align: center;
+  padding-top: 10px;
+}
+.topbar {
+  width: 100%;
+  max-width: 880px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+  padding: 6px 12px;
+}
+
+.score-box,
+.bomb-info,
+.range-info {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 1.1rem; /* ~17-18px, tweak as you like */
+}
+
+@media (max-width: 768px) {
+  .score-box,
+  .bomb-info,
+  .range-info {
+    font-size: 1rem; /* bigger on mobile */
+  }
+}
+
+.hearts {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hearts img.heart-img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 768px) {
+  .hearts img.heart-img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.canvas-wrap {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  display: inline-block;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 13/11;
+  position: relative;
+}
+canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 8px;
+  outline: 3px solid rgba(255, 255, 255, 0.03);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.01),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+#mobile-controls {
+  display: none;
+}
+
+/* Show on small screens (e.g., max-width 768px) */
+@media (max-width: 768px) {
+  #mobile-controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    z-index: 1000;
+  }
+
+  .middle-controls {
+    display: flex;
+    gap: 5px;
+  }
+  #mobile-controls button {
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  #mobile-controls button:active {
+    background: rgba(255, 255, 255, 1);
+  }
+}
+
+.instructions {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .overlay {
+    font-size: 25px; /* bigger for mobile */
+  }
+}
+
+.hidden {
+  display: none;
+}
+@media (max-width: 520px) {
+  .container {
+    margin-top: 5px;
+  }
+  .instructions {
+    font-size: 13px;
+  }
+}

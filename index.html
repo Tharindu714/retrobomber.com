@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Retro Bomber 💣 ᴰᵉᵛ ᵇʸ ᵀʰᵃʳⁱⁿᵈᵘ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="bomb.png" type="image/x-icon" />
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="hud-left">
+        <div class="score-box">Score: <span id="score">0</span></div>
+      </div>
+      <div class="hud-center">
+        <div id="hearts" class="hearts"></div>
+      </div>
+      <div class="hud-right">
+        <div class="bomb-info">Bombs: <span id="bombs-available">3</span>/<span id="bombs-max">3</span></div>
+        <div class="range-info">Range: <span id="bomb-range">2</span></div>
+      </div>
+    </header>
+
+    <h1>Bomber Madness 💣💥</h1>
+
+    <div class="canvas-wrap">
+      <canvas id="game" aria-label="Retro Bomber game"></canvas>
+      <div id="overlay" class="overlay hidden"></div>
+    </div>
+
+<!-- Mobile Controls -->
+<div id="mobile-controls">
+    <button id="btn-up">⬆️</button>
+    <div class="middle-controls">
+        <button id="btn-left">⬅️</button>
+        <button id="btn-bomb">💣</button>
+        <button id="btn-right">➡️</button>
+    </div>
+    <button id="btn-down">⬇️</button>
+</div>
+
+
+    <div class="instructions">
+      <p>Move with <strong>Arrow keys</strong> or <strong>WASD</strong>. Place bomb with <strong>Space</strong>.</p>
+      <p>Retro Games: Developed By Tharindu</p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
