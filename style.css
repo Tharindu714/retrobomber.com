@@ -132,7 +132,7 @@ canvas {
     gap: 5px;
   }
   #mobile-controls button {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     border: none;
     font-size: 24px;
     padding: 10px 15px;
@@ -141,7 +141,7 @@ canvas {
   }
 
   #mobile-controls button:active {
-    background: rgba(255, 255, 255, 1);
+    background: #00d4ff;
   }
 }
 
